@@ -8,8 +8,9 @@ this.timeout = 5000
 
 describe('API', () => {
   it('get campaign status', (done) => {
-    api.campaignStatus().then((campaign) => {
-      assert.equal(campaign.error_code, 0)
+    api.campaignStatus().then((data) => {
+      console.log(data)
+      assert.equal(data.error_code, 0)
       done()
     })
   })
