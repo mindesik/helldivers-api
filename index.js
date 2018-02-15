@@ -15,7 +15,7 @@ class API {
     }
   }
 
-  campaign() {
+  campaignStatus() {
     return new Promise((resolve, reject) => {
       if (moment().diff(this.cache.campaign.cachedAt) > this.config.expires || this.cache.campaign.data == null) {
         request({
@@ -41,10 +41,10 @@ class API {
           this.cache.campaign.data = JSON.parse(body)
           this.cache.campaign.cachedAt = moment()
 
-          resolve(this.cache.campaign)
+          resolve(this.cache.campaign.data)
         })
       } else {
-        resolve(this.cache.campaign)
+        resolve(this.cache.campaign.data)
       }
     })
   }
