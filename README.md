@@ -1,8 +1,8 @@
 # Helldivers API
 
-![Helldivers](/banner.jpg)
-
 Unofficial Node.js API client for [Helldivers](http://arrowheadgamestudios.com/games/helldivers/) game status.
+
+![Helldivers](/banner.jpg)
 
 ## Usage
 
