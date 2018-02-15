@@ -17,7 +17,7 @@ class API {
 
   /**
    * Get campaign status
-   * @return {Promise}
+   * @return Promise
    */
   campaignStatus() {
     return new Promise((resolve, reject) => {
@@ -39,8 +39,8 @@ class API {
 
   /**
    * Send request
-   * @param {Object} form 
-   * @return {Promise}
+   * @param Object form
+   * @return Promise
    */
   request(form) {
     return new Promise((resolve, reject) => {
