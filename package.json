@@ -1,0 +1,13 @@
+{
+  "name": "helldivers-api",
+  "version": "1.0.0",
+  "keywords": ["helldivers", "api", "game"],
+  "main": "index.js",
+  "repository": "git@github.com:misterpaladin/helldivers-api.git",
+  "author": "민 제식 <ds@codesmith.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "request": "^2.83.0"
+  }
+}
