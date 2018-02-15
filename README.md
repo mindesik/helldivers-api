@@ -1,6 +1,6 @@
 # Helldivers API
 
-![Helldivers](/banner.jpg)
+![Helldivers](https://raw.githubusercontent.com/misterpaladin/helldivers-api/master/banner.jpg)
 
 API client for [Helldivers](http://arrowheadgamestudios.com/games/helldivers/) game status.
 
