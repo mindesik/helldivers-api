@@ -15,6 +15,10 @@ class API {
     }
   }
 
+  /**
+   * Get campaign status
+   * @return {Promise}
+   */
   campaignStatus() {
     return new Promise((resolve, reject) => {
       if (moment().diff(this.cache.campaign.cachedAt) > this.config.expires || this.cache.campaign.data == null) {
@@ -33,7 +37,12 @@ class API {
     })
   }
 
-  request(form, ) {
+  /**
+   * Send request
+   * @param {Object} form 
+   * @return {Promise}
+   */
+  request(form) {
     return new Promise((resolve, reject) => {
       request({
         url: this.config.url,

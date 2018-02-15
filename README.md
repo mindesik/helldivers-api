@@ -2,9 +2,13 @@
 
 ![Helldivers](/banner.jpg)
 
-API client for [Helldivers](http://arrowheadgamestudios.com/games/helldivers/) game status.
+Unofficial Node.js API client for [Helldivers](http://arrowheadgamestudios.com/games/helldivers/) game status.
 
 ## Usage
+
+```
+$ npm install helldivers-api
+```
 
 ```javascript
 const API = require('helldivers-api')
@@ -13,7 +17,9 @@ const api = new API({
 })
 ```
 
-### Get campaign status
+### Available methods
+
+Get campaign status
 
 ```javascript
 api.campaignStatus().then(data => console.log(data))
