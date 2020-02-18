@@ -4,9 +4,8 @@ const api = new API({
   expires: 60000
 })
 
-this.timeout = 5000
-
 describe('API', () => {
+  this.timeout = 15000
   it('get campaign status', (done) => {
     api.campaignStatus().then((data) => {
       console.log(data)
